@@ -37,3 +37,29 @@ graph LR
     A[Spring] --> B[AOP]
     A[Spring] --> C[Aspect J]
 ```
+
+#### Spring-AOP Pros
+
+- It is simpler to use than  AspectJ, since you don't have to use LTW ([load-time weaving][1]) or the AspectJ compiler.
+
+- It uses the Proxy pattern and the Decorator
+  pattern
+
+#### Spring-AOP Cons
+
+- This is proxy-based AOP, so basically you can only use method-execution joinpoints.
+- Aspects aren't applied when calling another method within the same class.
+- There can be a little runtime overhead.
+-  Spring-AOP cannot add an aspect to anything that is not created by the Spring factory
+
+#### AspectJ Pros
+
+- This supports all joinpoints. This means you can do anything.
+- There is less runtime overhead than that of Spring AOP.
+
+#### AspectJ Cons
+
+- Be careful. Check if your aspects are weaved to only what you wanted to be weaved.
+- You need extra build process with AspectJ Compiler or have to setup LTW (load-time weaving)
+
+[1]: http://www.eclipse.org/aspectj/doc/next/devguide/ltw.html
