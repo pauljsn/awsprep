@@ -58,3 +58,7 @@ graph LR
 - You need extra build process with AspectJ Compiler or have to setup LTW (load-time weaving)
 
 [1]: http://www.eclipse.org/aspectj/doc/next/devguide/ltw.html
+
+
+### Spring Batch
+* https://terasoluna-batch.github.io/guideline/5.0.0.RELEASE/en/single_index.html#Ch02_SpringBatchArch_Detail
